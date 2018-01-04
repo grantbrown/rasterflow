@@ -1,0 +1,11 @@
+Package: rasterflow
+Type: Package
+Title: A set of tools for using GPUs to predict where water might end up.  
+Version: 0.1
+Date: 2015-08-31
+Author: Grant Brown
+Maintainer: Grant Brown <grant-brown@uiowa.edu>
+Description: I'm not a geographer, but I want to simulate watersheads with a particular eye on which administrative regions water might originate in, and which ones it might end up in. GPU features currently incomplete. 
+License: GPL (>= 3)
+Imports: methods, Rcpp (>= 0.12.0), RcppEigen
+LinkingTo: Rcpp, RcppEigen, OpenCL
