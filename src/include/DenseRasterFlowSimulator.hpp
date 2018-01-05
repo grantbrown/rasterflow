@@ -1,8 +1,10 @@
 #include<Rcpp.h>
 #include<RcppEigen.h>
 #include<Eigen/Core>
+#ifdef RASTERFLOW_USECL
 #define __CL_ENABLE_EXCEPTIONS
 #include<CL/cl.hpp>
+#endif 
 
 #ifndef RASTERFLOW_DENSERASTERFLOWSIMULATOR
 #define RASTERFLOW_DENSERASTERFLOWSIMULATOR

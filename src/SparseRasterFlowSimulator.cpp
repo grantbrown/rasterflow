@@ -183,6 +183,7 @@ void SparseRasterFlowSimulator::simulate(int n)
 
 void SparseRasterFlowSimulator::simulateOCL(int n)
 {
+#ifdef RASTERFLOW_USECL
     // Prepare OpenCL Environment
     std::vector<cl::Platform> platformVector;
     cl::Platform::get(&platformVector);
@@ -258,6 +259,7 @@ void SparseRasterFlowSimulator::simulateOCL(int n)
         Rcpp::stop("exiting...");
     }
     Rcpp::stop("Hey, I haven't finished the OpenCL version yet. Hold your horses.");
+#endif
 }
 
 

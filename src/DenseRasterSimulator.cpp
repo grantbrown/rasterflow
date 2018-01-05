@@ -190,6 +190,7 @@ void DenseRasterFlowSimulator::simulate(int n)
 
 void DenseRasterFlowSimulator::simulateOCL(int n)
 {
+#ifdef RASTERFLOW_USECL
     // Prepare OpenCL Environment
     std::vector<cl::Platform> platformVector;
     cl::Platform::get(&platformVector);
@@ -265,6 +266,7 @@ void DenseRasterFlowSimulator::simulateOCL(int n)
         Rcpp::stop("exiting...");
     }
     Rcpp::stop("Hey, I haven't finished the OpenCL version yet. Hold your horses.");
+#endif
 }
 
 

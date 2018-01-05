@@ -8,4 +8,5 @@ Maintainer: Grant Brown <grant-brown@uiowa.edu>
 Description: I'm not a geographer, but I want to simulate watersheads with a particular eye on which administrative regions water might originate in, and which ones it might end up in. GPU features currently incomplete. 
 License: GPL (>= 3)
 Imports: methods, Rcpp (>= 0.12.0), RcppEigen
-LinkingTo: Rcpp, RcppEigen, OpenCL
+LinkingTo: Rcpp, RcppEigen
+Suggests: OpenCL
